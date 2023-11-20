@@ -1,0 +1,40 @@
+.button {
+  display: inline-flex;
+  height: 40px;
+  padding: 8px var(--spacing-space-200, 16px);
+  border-radius: 7px;
+  background: var(--background-error, #f6d8d8);
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+  border: none;
+  color: var(--base-error, #d13b3b);
+  /* font-family: Lettera Text LL; */
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
+  cursor: pointer;
+}
+
+.primaryButton {
+  color: var(--content-on-brand, #fff);
+  display: flex;
+  width: 211px;
+  padding: var(--spacing-space-200, 16px);
+  border-radius: 8px;
+  background: var(--base-brand, #4643ee);
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-space-100, 8px);
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+button:disabled {
+  border-radius: 8px;
+  background: var(--background-disabled, #e4e4e4);
+  color: var(--content-tertiary, #adadad);
+  cursor: default;
+}
