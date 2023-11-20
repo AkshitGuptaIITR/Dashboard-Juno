@@ -79,7 +79,7 @@ const Table = ({ initialData = [] }) => {
   return (
     <table className={style.table}>
       <tr>
-        <th>User</th>
+        <th style={{width: "25%"}}>User</th>
         <th onClick={handleRiskSort}>
           <div
             className={style.flexRow}
@@ -153,7 +153,7 @@ const Table = ({ initialData = [] }) => {
             </div>
           </div>
         </th>
-        <th>Previously Reviewed</th>
+        <th style={{width: "25%"}}>Previously Reviewed</th>
       </tr>
       {tableData.map((userData, idx) => {
         return (
